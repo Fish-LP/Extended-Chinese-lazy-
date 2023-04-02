@@ -192,14 +192,14 @@
           {
             opcode: 'showPicker',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'open a file',
+            text: '打开文件',
             disableMonitor: true,
             hideFromPalette: true
           },
           {
             opcode: 'showPickerExtensions',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'open a [extension] file',
+            text: '打开后缀为 [extension] 的文件',
             arguments: {
               extension: {
                 type: Scratch.ArgumentType.STRING,
@@ -212,7 +212,7 @@
           {
             opcode: 'showPickerAs',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'open a file as [as]',
+            text: '将任意后缀的文件打开为 [as] ',
             arguments: {
               as: {
                 type: Scratch.ArgumentType.STRING,
@@ -223,7 +223,7 @@
           {
             opcode: 'showPickerExtensionsAs',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'open a [extension] file as [as]',
+            text: '将后缀为 [extension] 的文件打开为 [as]',
             arguments: {
               extension: {
                 type: Scratch.ArgumentType.STRING,
@@ -241,7 +241,7 @@
           {
             opcode: 'download',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'download [text] as [file]',
+            text: '使用户下载文件 [file] 内容 [text]',
             arguments: {
               text: {
                 type: Scratch.ArgumentType.STRING,
@@ -256,7 +256,7 @@
           {
             opcode: 'setOpenMode',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'set open file selector mode to [mode]',
+            text: '将打开文件选择器模式设置为 [mode]',
             arguments: {
               mode: {
                 type: Scratch.ArgumentType.STRING,
@@ -271,7 +271,7 @@
             acceptReporters: true,
             items: [
               {
-                text: 'text',
+                text: '文本',
                 value: AS_TEXT
               },
               {
@@ -284,11 +284,11 @@
             acceptReporters: true,
             items: [
               {
-                text: 'show modal',
+                text: '显示模态(保存状态)',
                 value: MODE_MODAL
               },
               {
-                text: 'open selector immediately',
+                text: '立即打开选择器',
                 value: MODE_IMMEDIATELY_SHOW_SELECTOR
               }
             ]
