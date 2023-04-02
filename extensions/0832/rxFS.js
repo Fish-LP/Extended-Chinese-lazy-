@@ -26,7 +26,7 @@
                         blockIconURI: wenj,
                         opcode: 'start',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'New [STR] ',
+                        text: '新建文件 [STR] ',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -38,7 +38,7 @@
                         blockIconURI: wenj,
                         opcode: 'file',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Set [STR] to [STR2] ',
+                        text: '设置文件 [STR] 的内容为 [STR2] ',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -54,7 +54,7 @@
                         blockIconURI: wenj,
                         opcode: 'sync',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Change the location of [STR] to [STR2] ',
+                        text: '将 [STR] 移动到 [STR2] ',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -70,7 +70,7 @@
                         blockIconURI: wenj,
                         opcode: 'del',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Delete [STR] ',
+                        text: '删除文件 [STR] ',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -82,7 +82,7 @@
                         blockIconURI: wenj,
                         opcode: 'webin',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'Load [STR] from the network',
+                        text: '从网络读取文件 [STR]',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -94,7 +94,7 @@
                         blockIconURI: wenj,
                         opcode: 'open',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'Open [STR]',
+                        text: '打开文件 [STR]',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -106,14 +106,14 @@
                         blockIconURI: file,
                         opcode: 'clean',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Clear file system',
+                        text: '清除当前文件系统',
                         arguments: {}
                     },
                     {
                         blockIconURI: file,
                         opcode: 'in',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Import file system from [STR]',
+                        text: '导入新的文件系统 [STR]',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -132,7 +132,7 @@
                         blockIconURI: file,
                         opcode: 'list',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'List the contents under the same folder [STR]',
+                        text: '列出 [STR] 的文件',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
@@ -144,7 +144,7 @@
                         blockIconURI: file,
                         opcode: 'search',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'Search [STR]',
+                        text: '搜索文件 [STR]',
                         arguments: {
                             STR: {
                                 type: Scratch.ArgumentType.STRING,
