@@ -17,13 +17,13 @@
                     {
                         opcode: 'Emptying',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Clear the console',
+                        text: '清除控制台',
                         arguments: {}
                     },
                     {
                         opcode: 'Information',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Information [string]',
+                        text: '信息 [string]',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -34,7 +34,7 @@
                     {
                         opcode: 'Journal',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Journal [string]',
+                        text: '日志 [string]',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -45,7 +45,7 @@
                     {
                         opcode: 'Warning',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Warning [string]',
+                        text: '警告 [string]',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -56,7 +56,7 @@
                     {
                         opcode: 'Error',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Error [string]',
+                        text: '错误 [string]',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -67,7 +67,7 @@
                     {
                         opcode: 'Timeron',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Start a timer named [string]',
+                        text: '启动名为 [string] 的计时器',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -78,7 +78,7 @@
                     {
                         opcode: 'Timerlog',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Prints the time that the timer named [string] runs',
+                        text: '打印名为 [string] 的计时器运行的时间',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -89,7 +89,7 @@
                     {
                         opcode: 'Timeroff',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: 'Ends a timer named [string] and prints the time it took from start to finish',
+                        text: '结束名为 [string] 的计时器并打印从开始到结束所花费的时间',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
