@@ -16,19 +16,19 @@
                     {
                         opcode: 'Timestamp',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'The current timestamp',
+                        text: '时间戳',
                         arguments: {}
                     },
                     {
                         opcode: 'timezone',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'The current time zone',
+                        text: '当前时区',
                         arguments: {}
                     },
                     {
                         opcode: 'Timedata',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'Extract [Timedata] from [timestamp]',
+                        text: '将 [Timedata] 转换为 [timestamp]',
                         arguments: {
                             timestamp: {
                                 type: Scratch.ArgumentType.NUMBER,
@@ -36,15 +36,15 @@
                             },
                             Timedata: {
                                 type: Scratch.ArgumentType.STRING,
-                                menu: "Time",
-                                defaultValue: 'year'
+                                menu: "time",
+                                defaultValue: '年'
                             }
                         }
                     },
                     {
                         opcode: 'TimestampToTime',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'Converts [timestamp] to a datetime',
+                        text: '将 [timestamp] 转换为日期时间',
                         arguments: {
                             timestamp: {
                                 type: Scratch.ArgumentType.NUMBER,
@@ -55,7 +55,7 @@
                     {
                         opcode: 'TimeToTimestamp',
                         blockType: Scratch.BlockType.REPORTER,
-                        text: 'Converts [time] to a timestamp',
+                        text: '将 [time] 转换为时间戳',
                         arguments: {
                             time: {
                                 type: Scratch.ArgumentType.NUMBER,
