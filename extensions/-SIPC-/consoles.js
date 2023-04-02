@@ -78,7 +78,7 @@
                     {
                         opcode: 'Timerlog',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: '打印名为 [string] 的计时器运行的时间',
+                        text: '输出名为 [string] 的计时器的当前时间',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
@@ -89,7 +89,7 @@
                     {
                         opcode: 'Timeroff',
                         blockType: Scratch.BlockType.COMMAND,
-                        text: '结束名为 [string] 的计时器并打印从开始到结束所花费的时间',
+                        text: '关闭名为 [string] 的计时器并输出',
                         arguments: {
                             string: {
                                 type: Scratch.ArgumentType.STRING,
