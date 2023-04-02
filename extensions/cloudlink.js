@@ -157,12 +157,12 @@ class CloudLink {
 				{
 					"opcode": 'returnGlobalData',
 					"blockType": "reporter",
-					"text": "Global data"
+					"text": "全球数据"
 				},
 				{
 					"opcode": 'returnPrivateData',
 					"blockType": "reporter",
-					"text": "Private data"
+					"text": "个人数据"
 				},
 				{
 					"opcode": 'returnDirectData',
@@ -172,47 +172,47 @@ class CloudLink {
 				{
 					"opcode": 'returnLinkData',
 					"blockType": "reporter",
-					"text": "Link status"
+					"text": "链接状态"
 				},
 				{
 					"opcode": 'returnStatusCode',
 					"blockType": "reporter",
-					"text": "Status code"
+					"text": "状态代码"
 				},
 				{
 					"opcode": 'returnUserListData', 
 					"blockType": "reporter",
-					"text": "Usernames"
+					"text": "所有用户名"
 				},
 				{
 					"opcode": "returnUsernameData",
 					"blockType": "reporter",
-					"text": "My username"
+					"text": "我的用户名"
 				},
 				{
 					"opcode": "returnVersionData",
 					"blockType": "reporter",
-					"text": "Extension version"
+					"text": "扩展版本"
 				},
 				{
 					"opcode": "returnServerVersion",
 					"blockType": "reporter",
-					"text": "Server version"
+					"text": "服务器版本"
 				},
 				{
 					"opcode": "returnServerList",
 					"blockType": "reporter",
-					"text": "Server list"
+					"text": "服务器列表"
 				},
 				{
 					"opcode": "returnMOTD",
 					"blockType": "reporter",
-					"text": "Server MOTD"
+					"text": "服务器 MOTD"
 				},
 				{
 					"opcode": "returnClientIP",
 					"blockType": "reporter",
-					"text": "My IP address"
+					"text": "我的 IP 地址"
 				},
 				{
 					"opcode": 'returnListenerData',
@@ -228,7 +228,7 @@ class CloudLink {
 				{
 					"opcode": "readQueueSize",
 					"blockType": "reporter",
-					"text": "Size of queue for [TYPE]",
+					"text": "队列 [TYPE] 的长度",
 					"arguments": {
 						"TYPE": {
 							"type": "string",
@@ -252,7 +252,7 @@ class CloudLink {
 				{
 					"opcode": 'returnVarData',
 					"blockType": "reporter",
-					"text": "[TYPE] [VAR] data",
+					"text": "[TYPE] [VAR] 数据",
 					"arguments": {
 						"VAR": {
 							"type": "string",
@@ -268,7 +268,7 @@ class CloudLink {
 				{
 					"opcode": 'parseJSON',
 					"blockType": "reporter",
-					"text": '[PATH] of [JSON_STRING]',
+					"text": '[PATH] 的 [JSON_STRING]',
 					"arguments": {
 						"PATH": {
 							"type": "string",
@@ -283,7 +283,7 @@ class CloudLink {
 				{
 					"opcode": 'getFromJSONArray',
 					"blockType": "reporter",
-					"text": 'Get [NUM] from JSON array [ARRAY]',
+					"text": '从 JSON 数组 [ARRAY] 获取 [NUM]',
 					"arguments": {
 						"NUM": {
 							"type": "number",
@@ -299,7 +299,7 @@ class CloudLink {
 					"opcode": 'fetchURL',
 					"blockType": "reporter",
 					"blockAllThreads": "true",
-					"text": "Fetch data from URL [url]",
+					"text": "从网址 [url] 获得数据",
 					"arguments": {
 						"url": {
 							"type": "string",
@@ -311,7 +311,7 @@ class CloudLink {
 					"opcode": 'requestURL', 
 					"blockType": "reporter",
 					"blockAllThreads": "true",
-					"text": 'Send request with method [method] for URL [url] with data [data] and headers [headers]',
+					"text": '使用方法 [method] 发送请求，用于包含数据 [data] 和标头 [headers] 的 URL [url]',
 					"arguments": {
 						"method": {
 							"type": "string",
@@ -334,7 +334,7 @@ class CloudLink {
 				{
 					"opcode": 'makeJSON',
 					"blockType": "reporter",
-					"text": 'Convert [toBeJSONified] to JSON',
+					"text": '将 [toBeJSONified] 转换为 JSON',
 					"arguments": {
 						"toBeJSONified": {
 							"type": "string",
@@ -345,19 +345,19 @@ class CloudLink {
 				{
 					"opcode": 'onConnect',
 					"blockType": "hat",
-					"text": 'When connected',
+					"text": '连接时',
 					"blockAllThreads": "true"
 				},
 				{
 					"opcode": 'onClose',
 					"blockType": "hat",
-					"text": 'When disconnected',
+					"text": '断开连接时',
 					"blockAllThreads": "true"
 				},
 				{
 					"opcode": 'onListener',
 					"blockType": "hat",
-					"text": 'When I receive new packet with listener [ID]',
+					"text": '当我收到带有侦听器 [ID] 的新数据包时',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ID": {
@@ -369,7 +369,7 @@ class CloudLink {
 				{
 					"opcode": 'onNewPacket',
 					"blockType": "hat",
-					"text": 'When I receive new [TYPE] packet',
+					"text": '当我收到新的 [TYPE] 数据包时',
 					"blockAllThreads": "true",
 					"arguments": {
 						"TYPE": {
@@ -382,7 +382,7 @@ class CloudLink {
 				{
 					"opcode": 'onNewVar',
 					"blockType": "hat",
-					"text": 'When I receive new [TYPE] data for [VAR]',
+					"text": '当我收到 [VAR] 的新 [TYPE] 数据时',
 					"blockAllThreads": "true",
 					"arguments": {
 						"TYPE": {
@@ -399,32 +399,32 @@ class CloudLink {
 				{
 					"opcode": 'getComState',
 					"blockType": "Boolean",
-					"text": 'Connected?',
+					"text": '连接?',
 				},
 				{
 					"opcode": 'getRoomState',
 					"blockType": "Boolean",
-					"text": 'Linked to rooms?',
+					"text": '连接到房间?',
 				},
 				{
 					"opcode": 'getComLostConnectionState',
 					"blockType": "Boolean",
-					"text": 'Lost connection?',
+					"text": '失去连接?',
 				},
 				{
 					"opcode": 'getComFailedConnectionState',
 					"blockType": "Boolean",
-					"text": 'Failed to connnect?',
+					"text": '无法连接?',
 				},
 				{
 					"opcode": 'getUsernameState',
 					"blockType": "Boolean",
-					"text": 'Username synced?',
+					"text": '用户名已同步?',
 				},
 				{
 					"opcode": 'returnIsNewData',
 					"blockType": "Boolean",
-					"text": 'Got New [TYPE]?',
+					"text": '有新的 [TYPE]?',
 					"arguments": {
 						"TYPE": {
 							"type": "string",
@@ -436,7 +436,7 @@ class CloudLink {
 				{
 					"opcode": 'returnIsNewVarData',
 					"blockType": "Boolean",
-					"text": 'Got New [TYPE] data for variable [VAR]?',
+					"text": '有变量 [VAR] 的新 [TYPE] 数据？',
 					"arguments": {
 						"TYPE": {
 							"type": "string",
@@ -452,7 +452,7 @@ class CloudLink {
 				{
 					"opcode": 'returnIsNewListener',
 					"blockType": "Boolean",
-					"text": 'Got new packet with listener [ID]?',
+					"text": '获得带有侦听器 [ID] 的新数据包?',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ID": {
@@ -464,7 +464,7 @@ class CloudLink {
 				{
 					"opcode": 'checkForID',
 					"blockType": "Boolean",
-					"text": 'ID [ID] connected?',
+					"text": 'ID [ID] 已连接?',
 					"arguments": {
 						"ID": {
 							"type": "string",
@@ -475,7 +475,7 @@ class CloudLink {
 				{
 					"opcode": 'isValidJSON',
 					"blockType": "Boolean",
-					"text": 'Is [JSON_STRING] valid JSON?',
+					"text": '[JSON_STRING] 是有效的 JSON 吗?',
 					"arguments": {
 						"JSON_STRING": {
 							"type": "string",
@@ -486,7 +486,7 @@ class CloudLink {
 				{
 					"opcode": 'openSocket',
 					"blockType": "command",
-					"text": 'Connect to [IP]',
+					"text": '连接到 [IP]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"IP": {
@@ -498,7 +498,7 @@ class CloudLink {
 				{
 					"opcode": 'openSocketPublicServers',
 					"blockType": "command",
-					"text": 'Connect to server [ID]',
+					"text": '连接到服务器 [ID]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ID": {
@@ -516,7 +516,7 @@ class CloudLink {
 				{
 					"opcode": 'setMyName',
 					"blockType": "command",
-					"text": 'Set [NAME] as username',
+					"text": '将 [NAME] 设置为用户名',
 					"blockAllThreads": "true",
 					"arguments": {
 						"NAME": {
@@ -528,7 +528,7 @@ class CloudLink {
 				{
 					"opcode": 'createListener',
 					"blockType": "command",
-					"text": 'Attach listener [ID] to next packet',
+					"text": '将侦听器 [ID] 附加到下一个数据包',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ID": {
@@ -540,7 +540,7 @@ class CloudLink {
 				{
 					"opcode": 'linkToRooms',
 					"blockType": "command",
-					"text": 'Link to room(s) [ROOMS]',
+					"text": '链接到房间 [ROOMS]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ROOMS": {
@@ -552,7 +552,7 @@ class CloudLink {
 				{
 					"opcode": 'selectRoomsInNextPacket',
 					"blockType": "command",
-					"text": 'Select room(s) [ROOMS] for next packet',
+					"text": '选择房间 [ROOMS] 为下一个包',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ROOMS": {
@@ -564,13 +564,13 @@ class CloudLink {
 				{
 					"opcode": 'unlinkFromRooms',
 					"blockType": "command",
-					"text": 'Unlink from all rooms',
+					"text": '取消与所有房间的链接',
 					"blockAllThreads": "true"
 				},
 				{
 					"opcode": 'sendGData',
 					"blockType": "command",
-					"text": 'Send [DATA]',
+					"text": '发送 [DATA]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"DATA": {
@@ -582,7 +582,7 @@ class CloudLink {
 				{
 					"opcode": 'sendPData',
 					"blockType": "command",
-					"text": 'Send [DATA] to [ID]',
+					"text": '发送 [DATA] 至 [ID]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"DATA": {
@@ -598,7 +598,7 @@ class CloudLink {
 				{
 					"opcode": 'sendGDataAsVar',
 					"blockType": "command",
-					"text": 'Send variable [VAR] with data [DATA]',
+					"text": '发送变量 [VAR] 和数据 [DATA]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"DATA": {
@@ -614,7 +614,7 @@ class CloudLink {
 				{
 					"opcode": 'sendPDataAsVar',
 					"blockType": "command",
-					"text": 'Send variable [VAR] to [ID] with data [DATA]',
+					"text": '将变量 [VAR] 发送到包含数据 [DATA] 的 [ID]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"DATA": {
@@ -634,7 +634,7 @@ class CloudLink {
 				{
 					"opcode": 'runCMDnoID',
 					"blockType": "command",
-					"text": 'Send command without ID [CMD] [DATA]',
+					"text": '发送不带 ID 的命令 [CMD] [DATA]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"CMD": {
@@ -650,7 +650,7 @@ class CloudLink {
 				{
 					"opcode": 'runCMD',
 					"blockType": "command",
-					"text": 'Send command [CMD] [ID] [DATA]',
+					"text": '发送命令 [CMD] [ID] [数据]',
 					"blockAllThreads": "true",
 					"arguments": {
 						"CMD": {
@@ -670,7 +670,7 @@ class CloudLink {
 				{
 					"opcode": 'resetNewData',
 					"blockType": "command",
-					"text": 'Reset got new [TYPE] status',
+					"text": '重新获得新的 [TYPE] 状态',
 					"blockAllThreads": "true",
 					"arguments": {
 						"TYPE": {
@@ -683,7 +683,7 @@ class CloudLink {
 				{
 					"opcode": 'resetNewVarData',
 					"blockType": "command",
-					"text": 'Reset got new [TYPE] [VAR] status',
+					"text": '重置获得新的 [TYPE] [VAR] 状态',
 					"blockAllThreads": "true",
 					"arguments": {
 						"TYPE": {
@@ -700,7 +700,7 @@ class CloudLink {
 				{
 					"opcode": 'resetNewListener',
 					"blockType": "command",
-					"text": 'Reset got new [ID] listener status',
+					"text": '重新获得新的 [ID] 侦听器状态',
 					"blockAllThreads": "true",
 					"arguments": {
 						"ID": {
@@ -712,7 +712,7 @@ class CloudLink {
 				{
 					"opcode": 'clearAllPackets',
 					"blockType": "command",
-					"text": "Clear all packets for [TYPE]",
+					"text": "清除 [TYPE] 的所有数据包",
 					"arguments": {
 						"TYPE": {
 							"type": "string",
@@ -1709,4 +1709,3 @@ console.log("CloudLink 4.0 loaded. Detecting unsandboxed mode.");
 Scratch.extensions.register(new CloudLink(Scratch.vm.runtime));
 
 })(Scratch);
-
